@@ -13,8 +13,8 @@ import time
 
 
 
-face_classifier = cv2.CascadeClassifier(r"C:\Users\Maheshi\Desktop\Fer\haarcascade_frontalface_default.xml")
-classifier_model = load_model(r"C:\Users\Maheshi\Desktop\Fer\model.h5")
+face_classifier = cv2.CascadeClassifier(path\to\haarcascade_frontalface_default.xml")
+classifier_model = load_model(path\to\model.h5")
 
 emotion_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 longterm_emotions = {'angry': 0.0, 'disgust': 0.0, 'fear': 0.0, 'happy': 0.0, 'sad': 0.0, 'surprise': 0.0,
@@ -73,7 +73,7 @@ else:
     print("No emotions detected during the given time.")
     exit()
 
-api_key = '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'
+api_key = 'sk-'
 openai.api_key = api_key
 
 conversation_history=[]
